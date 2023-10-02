@@ -4,7 +4,6 @@ Dockerized containter for esp8266 RTOS SDK and toolchain
 [![size](https://img.shields.io/github/repo-size/brinth/ESP8266_RTOS_SDK_Docker)](https://github.com/brinth/ESP8266_RTOS_SDK_Docker)
 [![lang](https://img.shields.io/github/languages/top/brinth/ESP8266_RTOS_SDK_Docker)](https://github.com/brinth/ESP8266_RTOS_SDK_Docker)
 [![commits](https://img.shields.io/github/commit-activity/t/brinth/ESP8266_RTOS_SDK_Docker)](https://github.com/brinth/ESP8266_RTOS_SDK_Docker)
-[![commits](https://img.shields.io/github/commit-activity/t/brinth/ESP8266_RTOS_SDK_Docker)](https://github.com/brinth/ESP8266_RTOS_SDK_Docker)
 [![open issues](https://img.shields.io/github/issues-raw/brinth/ESP8266_RTOS_SDK_Docker)](https://github.com/brinth/ESP8266_RTOS_SDK_Docker)
 [![closed issues](https://img.shields.io/github/issues-closed/brinth/ESP8266_RTOS_SDK_Docker)](https://github.com/brinth/ESP8266_RTOS_SDK_Docker)
 [![pull request](https://img.shields.io/github/languages/top/brinth/ESP8266_RTOS_SDK_Docker)](https://github.com/brinth/ESP8266_RTOS_SDK_Docker)
