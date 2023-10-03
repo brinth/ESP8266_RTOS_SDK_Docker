@@ -5,6 +5,11 @@ FROM ubuntu:18.04
 LABEL maintainer="Brinth Khanna <brinthkhanna@yahoo.com>"
 LABEL version="1.0"
 LABEL description="Docker image for ESP8266 RTOS SDK development and build"
+LABEL org.opencontainers.image.title="ESP8266 RTOS SDK"
+LABEL org.opencontainers.image.description="ESP8266 RTOS SDK Development Environment"
+LABEL org.opencontainers.image.source="https://github.com/brinth/ESP8266_RTOS_SDK_Docker"
+LABEL org.opencontainers.image.authors="Brinth Khanna"
+LABEL org.opencontainers.image.licenses="Apache 2.0"
 
 #Arguments
 ARG ESP_DIR=/opt/esp 
