@@ -22,6 +22,7 @@ ARG ESP8266_RTOS_SDK_DIR=$ESP_DIR/ESP8266_RTOS_SDK/
 # Install Prerequisites 
 RUN apt-get update -y
 RUN apt-get install -y gcc git wget make libncurses-dev flex bison gperf python3 python3-pip python3-serial curl
+RUN ln -sf /usr/bin/python3 /usr/bin/python
 
 # Download Toolchain
 RUN curl -L -o /tmp/xtensa-lx106-elf.tar.gz ${LX106_TOOLCHAIN_REMOTE}
