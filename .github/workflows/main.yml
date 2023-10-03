@@ -1,8 +1,10 @@
 name: Build & Push Docker image to Docker HUB
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - 'main'
+      - 'release/**'
 
 jobs:
   build_and_publish:
