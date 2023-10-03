@@ -1,5 +1,4 @@
-#Use ubuntu 18.04 as Base
-FROM ubuntu:18.04
+FROM ubuntu:22.04
 
 #Set metadata
 LABEL maintainer="Brinth Khanna <brinthkhanna@yahoo.com>"
