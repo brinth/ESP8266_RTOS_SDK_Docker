@@ -37,16 +37,6 @@ RUN tar -xvf /tmp/xtensa-lx106-elf.tar.gz
 # Export Toolchain's bin to PATH
 ENV PATH="${PATH}:${LX106_TOOLCHAIN_DIR}/bin"
 
-# Create Alias
-RUN alias get_lx106='export PATH="$PATH:$HOME/esp/xtensa-lx106-elf/bin"'
-
-# Print PATH
-RUN echo "PATH: ${PATH}"
-
-# Add user to dialout group ( NOT NEEDED as FW upload is not our goal)
-#RUN usermod -aG dialout $USER
-#RUN chmod -R 777 /dev/ttyUSB0
-
 # Clone ESP8266_RTOS_SDK
 RUN cd $ESP_DIR && \
 	git clone --recursive ${ESP8266_RTOS_SDK_REMOTE} 
@@ -55,11 +45,8 @@ RUN cd $ESP_DIR && \
 ENV IDF_PATH="${ESP_DIR}/ESP8266_RTOS_SDK"
 ENV PATH="${PATH}:${IDF_PATH}"
 
-# Print PATH
-RUN echo "PATH: ${PATH}"
-
 # Install Required Python Packages
-RUN python3 -m pip install --user -r ${IDF_PATH}/requirements.txt
+RUN python -m pip install -r ${IDF_PATH}/requirements.txt
 
 # Cleanup Download
 RUN rm -rf /tmp/xtensa-lx106-elf.tar.gz
